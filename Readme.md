@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Реш](https://up.htmlacademy.ru/adaptive/8/user/236435).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Болтян](https://up.htmlacademy.ru/adaptive/8/user/83202).
 
 ---
 
