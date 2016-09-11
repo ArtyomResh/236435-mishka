@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка, личный проект Реш А.Р.</title>
+  </head>
+  <body>
+
+    <header class="header-main">
+      <img class="logo-main" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Мишка">
+      <h1 class="visually hidden">Магазин вязанных изделий "Мишка"</h1>
+      <nav class="header-main__nav">
+        <a class="header-main__burger"></a>
+        <ul class="header-main__nav-list">
+          <li>
+            <a href="#" class="header-main__nav-item">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="#" class="header-main__nav-item">Вязание на заказ</a>
+          </li>
+          <li>
+            <a href="#" class="header-main__nav-item  header-main__nav-search">Поиск по сайту</a>
+          </li>
+          <li>
+            <a href="#" class="header-main__nav-item  header-main__nav-cart">Корзина:<span class="header-main__cart-state">пока пуста</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <footer class="footer-main">
+      <div class="social footer-main__social">
+        <a href="#" class="footer-main__social-link  footer-main__social-inst"></a>
+        <a href="#" class="footer-main__social-link  footer-main__social-fb"></a>
+        <a href="#" class="footer-main__social-link  footer-main__social-twitter"></a>
+      </div>
+      <a href="#" class="footer-main__copy-right">Разработано <img src="http://placehold.it/27x34" width=27 height=34 alt="Лого HTML Academy"></a>
+    </footer>
+
+    <div class="modal-overlay  modal-overlay--hidden"></div>
+    <div class="modal-add-to-cart  modal-add-to-cart--hidden">
+      <form action="#" class="modal-add-to-cart__form" name="modal-add-to-cart__form" method="post" >
+        <legend class="modal-add-to-cart__form-title">Добавить в корзину</legend>
+        <span class="modal-add-to-cart__form-choose-size">Выберите размер:</span>
+        <input type="radio" class="modal-add-to-cart__size  modal-add-to-cart__size-s" id="size-s" name="size" value="s" checked>
+        <label for="size-s">S</label>
+        <input type="radio" class="modal-add-to-cart__size  modal-add-to-cart__size-m" id="size-m" name="size" value="m">
+        <label for="size-m">M</label>
+        <input type="radio" class="modal-add-to-cart__size  modal-add-to-cart__size-l" id="size-l" name="size" value="l">
+        <label for="size-l">L</label>
+        <button class="btn  modal-cart-add-to-cart__btn" type="submit">Добавить</button>
+      </form>
+    </div>
+
+  </body>
+</html>
