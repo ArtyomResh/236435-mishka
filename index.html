@@ -3,29 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка, личный проект Реш А.Р.</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header-main">
-      <a class="logo-main"><img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Мишка"></a>
+
+      <div class="header-main__logo-container">
+      <a class="logo-main"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+      </div>
+
       <h1 class="visually-hidden">Магазин вязанных изделий "Мишка"</h1>
+
       <nav class="header-main__nav">
-        <a class="header-main__burger"></a>
+        <a href="#" class="header-main__nav-toggle  header-main__nav-toggle--open  header-main__nav-toggle--close">Главное меню</a>
         <ul class="header-main__nav-list  header-main__nav-list--hidden">
-          <li>
+          <li class="header-main__nav-item">
             <a href="catalog.html" class="header-main__nav-link">Каталог товаров</a>
           </li>
-          <li>
+          <li class="header-main__nav-item">
             <a href="form.html" class="header-main__nav-link">Вязание на заказ</a>
           </li>
-          <li>
+          <li class="header-main__nav-item">
             <a href="#" class="header-main__nav-link  header-main__nav-link--search">Поиск по сайту</a>
           </li>
-          <li>
-            <a href="#" class="header-main__nav-link  header-main__nav-link--cart">Корзина:<span class="header-main__cart-state">пока пуста</span></a>
+          <li class="header-main__nav-item">
+            <a href="#" class="header-main__nav-link  header-main__nav-link--cart">Корзина: <span class="header-main__cart-state">пока пусто</span></a>
           </li>
         </ul>
       </nav>
+
     </header>
 
     <main class="content-main">

@@ -1,0 +1,17 @@
+@mixin mobile-side-paddings ($side-paddings:30px) {
+  padding-right: $side-paddings;
+  padding-left: $side-paddings;
+}
+
+@mixin ul-reset () {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin font-OS-bold ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+}
