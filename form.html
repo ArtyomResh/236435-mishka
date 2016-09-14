@@ -8,21 +8,21 @@
 
     <header class="header-main">
       <a href="index.html" class="logo-main"><img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Мишка"></a>
-      <h1 class="visually hidden">Магазин вязанных изделий "Мишка"</h1>
+      <h1 class="visually-hidden">Магазин вязанных изделий "Мишка"</h1>
       <nav class="header-main__nav">
         <a class="header-main__burger"></a>
         <ul class="header-main__nav-list  header-main__nav-list--hidden">
           <li>
-            <a href="catalog.html" class="header-main__nav-item">Каталог товаров</a>
+            <a href="catalog.html" class="header-main__nav-link">Каталог товаров</a>
           </li>
           <li>
-            <a class="header-main__nav-item">Вязание на заказ</a>
+            <a class="header-main__nav-link">Вязание на заказ</a>
           </li>
           <li>
-            <a href="#" class="header-main__nav-item  header-main__nav-search">Поиск по сайту</a>
+            <a href="#" class="header-main__nav-link  header-main__nav-link--search">Поиск по сайту</a>
           </li>
           <li>
-            <a href="#" class="header-main__nav-item  header-main__nav-cart">Корзина:<span class="header-main__cart-state">пока пуста</span></a>
+            <a href="#" class="header-main__nav-link  header-main__nav-link--cart">Корзина:<span class="header-main__cart-state">пока пуста</span></a>
           </li>
         </ul>
       </nav>
@@ -101,7 +101,7 @@
           <legend class="order-form__legend">
             <label for="tel">Тел</label>
           </legend>
-          <input class="order-form__tel" type="tel" id="tel" name="tel" pattern="\D7[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
+          <input class="order-form__tel" type="tel" id="tel" name="tel" pattern="\D7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
         </fieldset>
 
         <fieldset class="order-form__fieldset">
@@ -115,8 +115,7 @@
           <legend class="order-form__legend">
             <label for="commentary">Доп</label>
           </legend>
-          <textarea class="order-form_commentary" id="commentary" name="commentary" placeholder="Опишите все ваши пожелания к заказу" rows="7" required>
-          </textarea>
+          <textarea class="order-form_commentary" id="commentary" name="commentary" rows="7" required>Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
 
         <p class="order-form__warning">Все поля обязательны для заполнения</p>
