@@ -1,0 +1,62 @@
+.item-video {
+  position: relative;
+
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding-top: 7px;
+
+  border: 1px solid #ececec;
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+
+    width: 32px;
+    height: 32px;
+
+    background: url("../../img/icon-video.svg") no-repeat;
+
+    content: "";
+  }
+
+  &__title {
+    margin-left: 90px;
+    margin-bottom: 25px;
+  }
+
+  &__player {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__player::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 102px;
+    height: 78px;
+
+    transform: translate(-50%, -50%);
+
+    background: url("../../img/icon-play.svg") no-repeat;
+
+    content: "";
+  }
+
+  &__description {
+    width: 192px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    line-height: 24px;
+  }
+
+  &__btn {
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
