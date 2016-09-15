@@ -1,0 +1,30 @@
+.reviews {
+  width: 260px;
+  padding-top: 15px;
+  @include mobile-side-paddings;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__control {
+    margin-bottom: 35px;
+  }
+
+  &__prev {
+    width: 130px;
+    height: 51px;
+
+    border: 1px solid #ececec;
+    background: url(../../img/icon-left-arrow.svg) no-repeat 50%;
+  }
+
+  &__next {
+    width: 130px;
+    height: 51px;
+    margin-left: -4px;
+
+    border: 1px solid #ececec;
+    background: url(../../img/icon-right-arrow.svg) no-repeat 50%;
+  }
+}
