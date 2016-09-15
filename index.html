@@ -178,19 +178,21 @@
     <div class="modal-add-to-cart  modal-add-to-cart--hidden">
       <form action="#" class="modal-add-to-cart__form" method="post" >
 
-        <h2 class="modal-add-to-cart__form-title">Добавить в корзину</h2>
-        <span class="modal-add-to-cart__form-choose-size">Выберите размер:</span>
+        <h2 class="modal-add-to-cart__form-title">Добавить<br>в корзину</h2>
+        <span class="modal-add-to-cart__choose-size">Выберите размер:</span>
 
-        <input class="modal-add-to-cart__size  modal-add-to-cart__size-s" type="radio" id="size-s" name="size" value="s" checked>
-        <label for="size-s">S</label>
+        <div class="modal-add-to-cart__size-list">
+          <input class="modal-add-to-cart__size" type="radio" id="size-s" name="size" value="s" checked>
+          <label class="modal-add-to-cart__size-label" for="size-s">S</label>
 
-        <input class="modal-add-to-cart__size  modal-add-to-cart__size-m" type="radio" id="size-m" name="size" value="m">
-        <label for="size-m">M</label>
+          <input class="modal-add-to-cart__size" type="radio" id="size-m" name="size" value="m">
+          <label class="modal-add-to-cart__size-label" for="size-m">M</label>
 
-        <input class="modal-add-to-cart__size  modal-add-to-cart__size-l" type="radio" id="size-l" name="size" value="l">
-        <label for="size-l">L</label>
+          <input class="modal-add-to-cart__size" type="radio" id="size-l" name="size" value="l">
+          <label class="modal-add-to-cart__size-label" for="size-l">L</label>
+        </div>
 
-        <button class="btn  modal-cart-add-to-cart__btn" type="submit">Добавить</button>
+        <button class="btn  modal-add-to-cart__btn" type="submit">Добавить</button>
 
       </form>
     </div>
