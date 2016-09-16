@@ -30,11 +30,11 @@
     height: 20px;
 
     &--close {
-      background: url("../../img/icon-menu-close.svg") no-repeat;
+      background: url("../img/icon-menu-close.svg") no-repeat;
     }
 
     &--open {
-      background: url("../../img/icon-menu-open.svg") no-repeat 50%;
+      background: url("../img/icon-menu-open.svg") no-repeat 50%;
     }
 
     font-size: 0;
@@ -81,11 +81,11 @@
     }
 
     &--search::before {
-      background: url("../../img/icon-search.svg") no-repeat 50%;
+      background: url("../img/icon-search.svg") no-repeat 50%;
     }
 
     &--cart::before {
-      background: url("../../img/icon-cart.svg") no-repeat 50%;
+      background: url("../img/icon-cart.svg") no-repeat 50%;
     }
   }
 }

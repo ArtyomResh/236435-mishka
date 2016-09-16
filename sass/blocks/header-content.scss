@@ -5,7 +5,7 @@
   background-color:  #f1f1f1;
 
   &--photo-background {
-    background: url("../../img/hero-mobile@1x.jpg") no-repeat 50% -17px;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -17px;
   }
 
   &__title {
@@ -56,7 +56,7 @@
     background-color: #63d1bb;
 
     &::after {
-      background: url("../../img/icon-interior.svg") no-repeat 50%;
+      background: url("../img/icon-interior.svg") no-repeat 50%;
       opacity: 0.5;
     }
   }
@@ -65,7 +65,7 @@
     background-color: #56c3b2;
 
     &::after {
-      background: url("../../img/icon-toy.svg") no-repeat 50%;
+      background: url("../img/icon-toy.svg") no-repeat 50%;
       opacity: 0.5;
     }
   }

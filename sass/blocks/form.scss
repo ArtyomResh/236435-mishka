@@ -111,7 +111,7 @@
   }
 
   &__color:checked + &__color-label::after {
-    background: url("../../img/icon-tick.svg") no-repeat 50%;
+    background: url("../img/icon-tick.svg") no-repeat 50%;
   }
 
   &__client {
@@ -166,7 +166,7 @@
 
     transform: translateY(-50%);
 
-    background: url("../../img/icon-phone.svg") no-repeat 50%;
+    background: url("../img/icon-phone.svg") no-repeat 50%;
     opacity: 0.2;
 
     content: "";
@@ -204,7 +204,7 @@
 
     transform: translateY(-50%);
 
-    background: url("../../img/icon-mail.svg") no-repeat 50%;
+    background: url("../img/icon-mail.svg") no-repeat 50%;
     opacity: 0.2;
 
     content: "";
