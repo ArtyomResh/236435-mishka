@@ -1,0 +1,23 @@
+.review {
+
+  &__text {
+    margin-bottom: 25px;
+    
+    font-size: 15px;
+  }
+
+  &__author {
+    margin-bottom: 25px;
+
+  }
+
+  &__author-name {
+    @include font-OS-bold(18px, 24px);
+  }
+
+  &__author-nick {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+  }
+}

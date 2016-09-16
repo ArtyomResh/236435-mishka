@@ -1,0 +1,58 @@
+.top-sales {
+  width: 260px;
+  padding-top: 30px;
+  @include mobile-side-paddings;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__sub {
+  @include  font-OS-bold(17px, 16px);
+  text-transform: uppercase;
+  color: #63d1bb;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__attributes {
+  width:100%;
+  margin-bottom: 30px;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: left;
+  vertical-align: middle;
+
+    & tr {
+      border-bottom: 1px solid #ececec;
+    }
+
+    & td {
+      height: 40px;
+    }
+
+    & td:first-of-type {
+      width: 100px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    display: block;
+
+    @include font-OS-bold(17px, 24px);
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 27px;
+    margin-bottom: 35px;
+  }
+}

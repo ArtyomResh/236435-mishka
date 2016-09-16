@@ -1,0 +1,22 @@
+.social {
+  font-size: 0;
+
+  &__link {
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    &--inst {
+      background: url("../../img/icon-insta.svg") no-repeat 50% 100%;
+    }
+
+    &--fb {
+      background: url("../../img/icon-fb.svg") no-repeat 50% 100%;
+    }
+
+    &--twitter {
+      background: url("../../img/icon-twitter.svg") no-repeat 50% 100%;
+    }
+  }
+}
