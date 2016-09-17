@@ -5,3 +5,9 @@
   height: 35px;
   margin: 0 auto;
 }
+
+@media ($tablet-widths) {
+  .logo-main {
+    margin: 0;
+  }
+}
