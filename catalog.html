@@ -10,26 +10,31 @@
 
     <header class="header-main">
 
-      <div class="header-main__logo-container">
-      <a href="index.html" class="logo-main"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
-      </div>
-
       <h1 class="visually-hidden">Магазин вязанных изделий "Мишка"</h1>
 
       <nav class="header-main__nav">
-        <a href="#" class="header-main__nav-toggle  header-main__nav-toggle--open  header-main__nav-toggle--close">Главное меню</a>
-        <ul class="header-main__nav-list  header-main__nav-list--hidden">
+        <a href="#" class="header-main__nav-toggle  header-main__nav-toggle--open  header-main__nav-toggle--close">Главное меню</a> <!---->
+        <ul class="header-main__nav-list"> <!-- класс header-main__nav-list с модификатором hidden прячет список навигации-->
+          <li class="header-main__nav-logo-container">
+            <a href="index.html" class="logo-main"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+          </li>
           <li class="header-main__nav-item">
             <a class="header-main__nav-link">Каталог товаров</a>
           </li>
           <li class="header-main__nav-item">
             <a href="form.html" class="header-main__nav-link">Вязание на заказ</a>
           </li>
-          <li class="header-main__nav-item">
+          <li class="header-main__nav-item  header-main__nav-item--search">
             <a href="#" class="header-main__nav-link  header-main__nav-link--search">Поиск по сайту</a>
           </li>
-          <li class="header-main__nav-item">
+          <li class="header-main__nav-item  header-main__nav-item--cart">
             <a href="#" class="header-main__nav-link  header-main__nav-link--cart">Корзина: <span class="header-main__cart-state">пока пусто</span></a>
+          </li>
+          <li class="header-main__nav-item  header-main__nav-item--hidden">
+            <a href="#" class="header-main__nav-link">Новые поступления</a>
+          </li>
+          <li class="header-main__nav-item  header-main__nav-item--hidden">
+            <a href="#" class="header-main__nav-link">Распродажа</a>
           </li>
         </ul>
       </nav>
