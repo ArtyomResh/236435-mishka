@@ -79,9 +79,10 @@
 
   .header-content__title {
     width: 500px;
-    margin: auto;
     padding-top: 95px;
     padding-bottom: 81px;
+
+    font-size: 43px;
 
     &--index {
       padding-top: 155px;
@@ -107,5 +108,29 @@
   .header-content__nav-link--toys::after {
     top: 55%;
     right: 35px;
+  }
+}
+
+
+@media ($desktop-widths) {
+  .header-content {
+    width: 1150px;
+  }
+
+  .header-content__title {
+    width: 615px;
+    padding-bottom: 101px;
+
+    font-size: 53px;
+
+    &--index {
+      padding-bottom: 360px;
+    }
+  }
+
+  .header-content__nav-link {
+     width: 455px;
+     padding-top: 25px;
+     padding-left: 40px;
   }
 }
