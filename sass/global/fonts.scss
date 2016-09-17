@@ -34,3 +34,10 @@ h3 {
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #000000;
 }
+
+@media ($tablet-widths) {
+  h2 {
+    font-size: 43px;
+  line-height: 50px;
+  }
+}
