@@ -6,6 +6,7 @@
 
 .contacts__title {
   margin-bottom: 25px;
+
   @include font-OS-bold(18px, 30px);
 }
 
@@ -84,6 +85,7 @@
 
   .contacts__title {
     margin-bottom: 50px;
+
     @include font-OS-bold(43px, 50px);
   }
 
@@ -114,5 +116,46 @@
   .contacts__write-us {
     width: 226px;
     margin: 0 auto;
+  }
+}
+
+@media ($desktop-widths) {
+  .contacts {
+    width: 1050px;
+    padding-top: 190px;
+
+    &::after {
+      position: absolute;
+      top: 225px;
+      left: 115px;
+    }
+  }
+
+  .contacts__title {
+    margin-bottom: 45px;
+    margin-left: 175px;
+
+    @include font-OS-bold(53px, 57px);
+  }
+
+  .contacts__table-of-contacts {
+    margin-left: 175px;
+    margin-bottom: 50px;
+  }
+
+  .contacts__table-of-contacts tr {
+    display: table-row;
+  }
+
+  .contacts__map {
+    float: right;
+
+    width: 525px;
+    margin-top: -405px;
+  }
+
+  .contacts__write-us {
+    width: 228px;
+    margin-left: 175px;
   }
 }
