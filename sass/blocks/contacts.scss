@@ -2,59 +2,117 @@
   width: 260px;
   padding-top: 35px;
   @include mobile-side-paddings;
+}
 
-  &__title {
-    margin-bottom: 25px;
-    @include font-OS-bold(18px, 30px);
-  }
+.contacts__title {
+  margin-bottom: 25px;
+  @include font-OS-bold(18px, 30px);
+}
 
-  &__table-of-contacts {
-    width: 100%;
-    margin-bottom: 10px;
+.contacts__table-of-contacts {
+  width: 100%;
+  margin-bottom: 10px;
 
-    font-size: 15px;
-    line-height: 30px;
-    text-align: left;
-    color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+  color: #444444;
+}
 
-    & td {
-      vertical-align: top;
-      padding-bottom: 30px;
-    }
+.contacts__table-of-contacts td {
+  vertical-align: top;
+  padding-bottom: 30px;
+}
 
-    & td:first-of-type {
-      width: 80px;
-    }
-  }
+.contacts__table-of-contacts td:first-of-type {
+  width: 80px;
+}
 
-  &__email {
-    border-bottom: 1px solid #62d1ba;
-    padding-bottom: 5px;
-  }
 
-  &__map {
+.contacts__email {
+  border-bottom: 1px solid #62d1ba;
+  padding-bottom: 5px;
+}
+
+.contacts__map {
+  position: relative;
+
+  margin-left: -30px;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+
+    width: 67px;
+    height: 100px;
+
+    transform: translate(-50%, -50%);
+
+    background: url("../img/icon-map-pin.svg") no-repeat;
+
+    content: "";
+ }
+}
+
+.contacts__write-us {
+  margin-bottom: 35px;
+}
+
+@media ($tablet-widths) {
+  .contacts {
     position: relative;
 
-    margin-left: -30px;
-    margin-bottom: 30px;
+    width: 668px;
+    padding-top: 110px;
+    @include tablet-side-paddings
 
     &::after {
       position: absolute;
-      top: 45%;
-      left: 55%;
+      top: 130px;
+      right: 50px;
 
-      width: 67px;
-      height: 100px;
+      width: 47px;
+      height: 81px;
 
-      transform: translate(-50%, -50%);
-
-      background: url("../img/icon-map-pin.svg") no-repeat;
+      background: url("../img/icon-flag.svg") no-repeat;
 
       content: "";
     }
   }
 
-  &__write-us {
-    margin-bottom: 35px;
+  .contacts__title {
+    margin-bottom: 50px;
+    @include font-OS-bold(43px, 50px);
+  }
+
+  .contacts__table-of-contacts {
+    display: table;
+    width: auto;
+    margin-bottom: 25px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__table-of-contacts tr {
+    display: table-cell;
+    width: 334px;
+
+    vertical-align: top;
+  }
+
+  .contacts__map {
+    margin-left: -50px;
+    margin-bottom: 45px;
+
+    &::after {
+        left: 53%;
+    }
+  }
+  .contacts__write-us {
+    width: 226px;
+    margin: 0 auto;
   }
 }
