@@ -103,7 +103,6 @@
     width: 1050px;
     padding-top: 78px;
     @include tablet-side-paddings;
-    @include outline;
   }
 
   .features__title {
