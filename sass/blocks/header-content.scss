@@ -133,4 +133,13 @@
      padding-top: 25px;
      padding-left: 40px;
   }
+
+  .header-content__nav-link--toys {
+    width: 460px;
+    padding-left: 35px;
+
+    &::after {
+      top: 50%;
+    }
+  }
 }
