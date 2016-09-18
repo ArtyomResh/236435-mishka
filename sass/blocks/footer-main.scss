@@ -78,3 +78,13 @@
     color: #000000;
   }
 }
+
+@media ($desktop-widths) {
+  .footer-main {
+
+    width: 1050px;
+    min-height: 95px;
+    margin-top: 105px;
+    padding-top: 50px;
+  }
+}
