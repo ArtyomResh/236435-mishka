@@ -3,29 +3,75 @@
   @include mobile-side-paddings;
 
   background-color: #f1f1f1;
+}
 
-  &__social {
+.footer-main__logo--hidden {
+  display: none;
+}
+
+.footer-main__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-main__copy-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+
+  @include font-OS-bold(19px, 18px)
+  text-decoration: none;
+  color: #000000;
+}
+
+@media ($tablet-widths) {
+  .footer-main {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-
-    border-bottom: 1px solid #e5e5e5;
+    width: 668px;
+    min-height: 95px;
+    margin-top: 55px;
+    padding-top: 50px;
+    @include tablet-side-paddings;
   }
 
-  &__copy-right {
+  .footer-main__logo {
+    display: block;
+    width: 185px; //удалить и заменить на другой логотип
+    height: 34px;
+  }
+
+  .footer-main__social {
+    padding: 0;
+    padding-top: 8px;
+    width: 180px;
+
+    border: none;
+  }
+
+  .footer-main__copy-right {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
+    width: 184px;
+    padding:0;
+    padding-top: 10px;
 
     @include font-OS-bold(19px, 18px)
     text-decoration: none;
