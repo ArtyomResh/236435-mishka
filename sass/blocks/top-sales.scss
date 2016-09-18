@@ -119,3 +119,41 @@
     width: 290px;
   }
 }
+
+@media ($desktop-widths) {
+  .top-sales {
+    width: 1050px;
+  }
+
+  .top-sales__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 700px;
+    margin-top: 80px;
+  }
+
+  .top-sales__title {
+    order: 2;
+  }
+
+  .top-sales__sub {
+    order: 1;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .top-sales__content-wrapper {
+    margin-left: 175px;
+  }
+
+  .top-sales__description {
+    margin-bottom: 50px;
+  }
+
+  .top-sales__attributes {
+    margin-bottom: 105px;
+  }
+}
