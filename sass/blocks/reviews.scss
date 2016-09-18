@@ -90,3 +90,27 @@
     font-size: 17px;
   }
 }
+
+@media ($desktop-widths) {
+  .reviews {
+    width: 1050px;
+    padding-top: 75px;
+
+    background-position: 50px 100%;
+    @include outline;
+  }
+
+  .reviews__title {
+    margin-left: 175px;
+    margin-bottom: 32px;
+  }
+
+  .reviews__review-block {
+    width: 875px;
+    margin-left: 175px;
+  }
+
+  .reviews__control {
+    margin-bottom: 90px;
+  }
+}
