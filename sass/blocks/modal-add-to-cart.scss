@@ -14,59 +14,93 @@
   background-color: #ffffff;
   box-shadow:
     inset 0 1px 0 0 #e7e7e7,
-    0 15px 5px -5px #e7e7e7;
+    0 15px 35px -5px;
 
   &--hidden {
     display: none;
   }
-  &__form {
-    text-align: center;
+}
+
+.modal-add-to-cart__form {
+  text-align: center;
+}
+
+.modal-add-to-cart__form-title {
+  margin-bottom: 13px;
+
+  text-transform: uppercase;
+}
+
+.modal-add-to-cart__choose-size {
+  font-size: 15px;
+}
+
+.modal-add-to-cart__size-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-add-to-cart__size {
+  display: none;
+}
+
+.modal-add-to-cart__size:checked + .modal-add-to-cart__size-label {
+  border-color: #63d1bb;
+}
+
+.modal-add-to-cart__size-label {
+  display: block;
+  width: 78px;
+  height: 48px;
+
+  @include font-OS-bold(17px, 50px);
+
+  border: 2px solid #ececec;
+}
+
+.modal-add-to-cart__btn {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  padding: 0;
+
+  line-height: 50px;
+  color: #ffffff;
+
+  border: none;
+  background-color: #63d1bb;
+}
+
+@media ($tablet-widths) {
+
+  .modal-add-to-cart {
+    width: 354px;
+    padding-top: 10px;
+
+    padding-right: 108px;
+    padding-left: 108px;
+
+    box-shadow:
+      0 0 0 1px #e7e7e7,
+      0 10px 35px 1px;
   }
 
-  &__form-title {
-    margin-bottom: 13px;
-
-    text-transform: uppercase;
+  .modal-add-to-cart__form-title {
+    @include font-OS-bold(30px, 57px);
   }
 
-  &__choose-size {
-    font-size: 15px;
+  .modal-add-to-cart__choose-size {
+    font-size: 17px;
   }
 
-  &__size-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+  .modal-add-to-cart__size-label {
+    width: 108px;
   }
 
-  &__size {
-    display: none;
-  }
-
-  &__size:checked + .modal-add-to-cart__size-label {
-    border-color: #63d1bb;
-  }
-
-  &__size-label {
-    display: block;
-    width: 78px;
-    height: 48px;
-
-    @include font-OS-bold(17px, 50px);
-
-    border: 2px solid #ececec;
-  }
-
-  &__btn {
+  .modal-add-to-cart__btn {
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 55px;
-    padding: 0;
-
-    line-height: 50px;
-    color: #ffffff;
-
-    border: none;
-    background-color: #63d1bb;
+    margin-bottom: 45px;
   }
 }
