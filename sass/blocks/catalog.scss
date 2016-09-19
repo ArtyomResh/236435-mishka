@@ -9,3 +9,14 @@
     @include tablet-side-paddings;
   }
 }
+
+@media ($tablet-widths) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    width: 1050px;
+    padding-top: 100px;
+  }
+}
