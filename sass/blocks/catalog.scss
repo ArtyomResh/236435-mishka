@@ -1,3 +1,11 @@
 .catalog {
   @include mobile-side-paddings;
 }
+
+@media ($tablet-widths) {
+  .catalog {
+    width: 668px;
+    padding-top: 50px;
+    @include tablet-side-paddings;
+  }
+}
