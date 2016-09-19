@@ -1,17 +1,22 @@
 .item-video {
-  position: relative;
-
   width: 260px;
   margin: 0 auto;
   margin-bottom: 55px;
   padding-top: 7px;
 
   border: 1px solid #ececec;
+}
+
+.item-video__title {
+  position: relative;
+
+  margin-left: 90px;
+  margin-bottom: 25px;
 
   &::before {
     position: absolute;
-    top: 30px;
-    left: 35px;
+    top: 5px;
+    left: -58px;
 
     width: 32px;
     height: 32px;
@@ -20,43 +25,83 @@
 
     content: "";
   }
+}
 
-  &__title {
-    margin-left: 90px;
-    margin-bottom: 25px;
+.item-video__player {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.item-video__player::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 102px;
+  height: 78px;
+
+  transform: translate(-50%, -50%);
+
+  background: url("../img/icon-play.svg") no-repeat;
+
+  content: "";
+}
+
+.item-video__description {
+  width: 192px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  line-height: 24px;
+}
+
+.item-video__btn {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+@media ($tablet-widths) {
+  .item-video {
+    display: flex;
+    flex-direction: column;
+
+    width: 668px;
+    padding-top: 0;
   }
 
-  &__player {
-    position: relative;
-    margin-bottom: 15px;
+  .item-video__title {
+    order: 2;
+
+    margin-left: 105px;
+    margin-bottom: 30px;
+
+    &::before {
+      top: -5px;
+      left: -62px;
+    }
   }
 
-  &__player::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  .item-video__player {
+    order: 1;
 
-    width: 102px;
-    height: 78px;
-
-    transform: translate(-50%, -50%);
-
-    background: url("../img/icon-play.svg") no-repeat;
-
-    content: "";
+    width: 668px;
+    height: 455px; //временно
+    margin-bottom: 22px;
   }
+  .item-video__description {
+    order: 3;
 
-  &__description {
-    width: 192px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-
-    line-height: 24px;
-  }
-
-  &__btn {
-    width: 190px;
-    margin: 0 auto;
+    width: 584px;
     margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .item-video__btn {
+    order: 4;
+
+    width: 584px;
+    margin-bottom: 50px;
   }
 }
