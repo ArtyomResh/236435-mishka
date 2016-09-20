@@ -330,6 +330,8 @@
     margin: 0;
     margin-top: 10px;
 
+    @include font-OS-bold(17px, 18px);
+
     &::after {
       display: none;
     }
@@ -508,5 +510,125 @@
   .order-form__btn {
     width: 230px;
     margin-left: 50px;
+  }
+}
+
+@media ($desktop-widths) {
+  .order-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .order-form__annotation {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 125px;
+  }
+
+  .order-form__fieldset {
+    justify-content: flex-start;
+
+    width: 1050px;
+    padding-top: 65px;
+  }
+
+  .order-form__legend {
+
+    width: 175px;
+    margin: 0;
+    margin-top: 10px;
+
+    text-align: center;
+  }
+
+  .order-form__color-list {
+    width: 875px;
+    margin-bottom: 30px;
+  }
+
+  .order-form__color-list-item:nth-child(even) {
+    margin-right: 20px;
+  }
+
+  .order-form__color-list-item:nth-child(3n) {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .order-form__client {
+    width: 575px;
+    margin-right: 160px;
+  }
+
+  .order-form__client:first-of-type {
+    width: 625px;
+  }
+
+  .order-form__client:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .order-form__client-label {
+    width: 155px;
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 25px;
+    margin-left: auto;
+
+    text-align: right;
+  }
+
+  .order-form__client-label:first-of-type {
+    width: 75px;
+    padding-right: 0;
+    padding-left: 0;
+
+    text-align: left;
+  }
+
+  .order-form__tel {
+    width: 685px;
+    margin-right: 15px;
+  }
+
+  .order-form__tel-label {
+    width: 105px;
+    padding-left: 65px;
+
+    text-align: left;
+  }
+
+  .order-form__email {
+    width: 685px;
+    margin-bottom: 70px;
+  }
+
+  .order-form__email-label {
+    width: 125px;
+    margin-top: -5px;
+    padding-left: 50px;
+
+    text-align: left;
+  }
+
+  .order-form__email-icon::after {
+    top: 15px;
+    right: 5px;
+  }
+
+  .order-form__commentary {
+    width: 700px;
+    margin-bottom: 95px;
+  }
+
+  .order-form__commentary-label {
+    margin-top: 5px;
+  }
+
+  .order-form__warning {
+    margin-right: 225px;
+  }
+
+  .order-form__btn {
+    margin-left: 225px;
   }
 }
