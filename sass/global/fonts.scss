@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/opensans.woff2") format("woff2"),
-       url("../../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans Bold";
-  src: url("../../fonts/opensansbold.woff2") format("woff2"),
-       url("../../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+       url("../fonts/opensansbold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,4 +33,23 @@ h3 {
   line-height: 24px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #000000;
+}
+
+@media ($tablet-widths) {
+  h2 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media ($desktop-widths) {
+  h2 {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

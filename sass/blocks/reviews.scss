@@ -2,33 +2,114 @@
   width: 260px;
   padding-top: 15px;
   @include mobile-side-paddings;
+}
 
-  &__title {
-    margin-bottom: 25px;
+.reviews__title {
+  margin-bottom: 25px;
+}
+
+.reviews__control {
+  margin-bottom: 35px;
+}
+
+.reviews__prev {
+  width: 130px;
+  height: 51px;
+
+  border: 1px solid #ececec;
+  background: url(../img/icon-left-arrow.svg) no-repeat 50%;
+}
+
+.reviews__next {
+  width: 130px;
+  height: 51px;
+  margin-left: -4px;
+
+  border: 1px solid #ececec;
+  background: url(../img/icon-right-arrow.svg) no-repeat 50%;
+}
+
+.reviews__write-review {
+  margin-bottom: 35px;
+}
+
+
+@media ($tablet-widths) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: 668px;
+    padding-top: 70px;
+    @include tablet-side-paddings;
+
+    background: url("../img/review@1x.jpg") no-repeat 0% 100%;
   }
 
-  &__control {
+  .reviews__title {
+    order: 1;
+    align-self: baseline;
+    margin-right: auto;
     margin-bottom: 35px;
   }
 
-  &__prev {
-    width: 130px;
-    height: 51px;
+  .reviews__review-block {
+    order: 3;
 
-    border: 1px solid #ececec;
-    background: url(../../img/icon-left-arrow.svg) no-repeat 50%;
+    width: 668px;
   }
 
-  &__next {
-    width: 130px;
-    height: 51px;
-    margin-left: -4px;
+  .reviews__control {
+    order: 4;
 
-    border: 1px solid #ececec;
-    background: url(../../img/icon-right-arrow.svg) no-repeat 50%;
+    width: 175px;
   }
 
-  &__write-review {
-    margin-bottom: 35px;
+  .reviews__prev {
+    width: 85px;
+    height: 51px;
+
+    border: none;
+  }
+
+  .reviews__next {
+    width: 90px;
+    height: 51px;
+
+    border: none;
+
+  }
+
+  .reviews__write-review {
+    order: 2;
+    align-self: baseline;
+
+    width: 171px;
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+}
+
+@media ($desktop-widths) {
+  .reviews {
+    width: 1050px;
+    padding-top: 75px;
+
+    background-position: 50px 100%;
+  }
+
+  .reviews__title {
+    margin-left: 175px;
+    margin-bottom: 32px;
+  }
+
+  .reviews__review-block {
+    width: 875px;
+    margin-left: 175px;
+  }
+
+  .reviews__control {
+    margin-bottom: 90px;
   }
 }

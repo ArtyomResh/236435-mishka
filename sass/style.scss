@@ -1,9 +1,9 @@
+@import "variables.scss";
+@import "mixins.scss";
+
 @import "normalize.scss";
 @import "global/fonts.scss";
 @import "global/layout.scss";
-
-@import "variables.scss";
-@import "mixins.scss";
 
 //Общие стили для всех страниц
 @import "blocks/btn.scss";
@@ -29,7 +29,7 @@
 @import "blocks/item-video.scss";
 
 //Уникальные стили для form.html
-@import "blocks/form.scss";
+@import "blocks/order-form.scss";
 
 //Вспомогательные стили
 @import "help/visually-hidden.scss";

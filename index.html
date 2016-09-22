@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка, личный проект Реш А.Р.</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -9,26 +10,31 @@
 
     <header class="header-main">
 
-      <div class="header-main__logo-container">
-      <a class="logo-main"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
-      </div>
-
       <h1 class="visually-hidden">Магазин вязанных изделий "Мишка"</h1>
 
       <nav class="header-main__nav">
-        <a href="#" class="header-main__nav-toggle  header-main__nav-toggle--open  header-main__nav-toggle--close">Главное меню</a>
-        <ul class="header-main__nav-list  header-main__nav-list--hidden">
+        <a href="#" class="header-main__nav-toggle  header-main__nav-toggle--open  header-main__nav-toggle--close">Главное меню</a> <!---->
+        <ul class="header-main__nav-list"> <!-- класс header-main__nav-list с модификатором hidden прячет список навигации-->
+          <li class="header-main__nav-logo-container">
+            <a class="header-main__logo  logo-main"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+          </li>
           <li class="header-main__nav-item">
             <a href="catalog.html" class="header-main__nav-link">Каталог товаров</a>
           </li>
           <li class="header-main__nav-item">
             <a href="form.html" class="header-main__nav-link">Вязание на заказ</a>
           </li>
-          <li class="header-main__nav-item">
+          <li class="header-main__nav-item  header-main__nav-item--search">
             <a href="#" class="header-main__nav-link  header-main__nav-link--search">Поиск по сайту</a>
           </li>
-          <li class="header-main__nav-item">
+          <li class="header-main__nav-item  header-main__nav-item--cart">
             <a href="#" class="header-main__nav-link  header-main__nav-link--cart">Корзина: <span class="header-main__cart-state">пока пусто</span></a>
+          </li>
+          <li class="header-main__nav-item  header-main__nav-item--hidden">
+            <a href="#" class="header-main__nav-link">Новые поступления</a>
+          </li>
+          <li class="header-main__nav-item  header-main__nav-item--hidden">
+            <a href="#" class="header-main__nav-link">Распродажа</a>
           </li>
         </ul>
       </nav>
@@ -38,50 +44,54 @@
     <main class="content-main">
 
       <header class="header-content  header-content--photo-background">
-        <h2 class="header-content__title">Милые штуки<br>ручной<br>работы для дома</h2>
+        <h2 class="header-content__title  header-content__title--index">Милые штуки ручной<br>работы для дома</h2>
         <ul class="header-content__nav-list">
-          <li>
+          <li class="header-content__nav-item">
             <a href="#" class="header-content__nav-link  header-content__nav-link--interior">Предметы<br>интерьера</a>
           </li>
-          <li>
+          <li class="header-content__nav-item">
             <a href="#" class="header-content__nav-link  header-content__nav-link--toys">Детские<br>игрушки</a>
           </li>
         </ul>
       </header>
 
       <article class="top-sales">
-        <h2 class="top-sales__title">Вязаные корзинки</h2>
-        <span class="top-sales__sub">Товар недели</span>
-        <p class="top-sales__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="top-sales__attributes">
-          <tr>
-            <td>
-              Цвет:
-            </td>
-            <td>
-              «Тиффани»/серый
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Диаметр:
-            </td>
-            <td>
-              25 см
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Высота:
-            </td>
-            <td>
-              15 см
-            </td>
-          </tr>
-        </table>
-        <img class="top-sales__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
-        <span class="top-sales__price">Цена: 990  руб.</span>
-        <a href="#" class="btn  top-sales__btn">Заказать</a>
+        <div class="top-sales__title-wrapper">
+          <h2 class="top-sales__title">Вязаные корзинки</h2>
+          <span class="top-sales__sub">Товар недели</span>
+        </div>
+        <div class="top-sales__content-wrapper">
+          <p class="top-sales__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="top-sales__attributes">
+            <tr>
+              <td>
+                Цвет:
+              </td>
+              <td>
+                «Тиффани»/серый
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Диаметр:
+              </td>
+              <td>
+                25 см
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Высота:
+              </td>
+              <td>
+                15 см
+              </td>
+            </tr>
+          </table>
+          <img class="top-sales__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
+          <span class="top-sales__price">Цена: 990  руб.</span>
+          <a href="#" class="btn  top-sales__btn">Заказать</a>
+        </div>
       </article>
 
       <section class="features">
@@ -110,7 +120,7 @@
 
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <article class="review">
+        <article class="reviews__review-block  review">
           <p class="review__text">
             Я молодая мама, но всё равно
             фотографии не набирали и близко
@@ -151,8 +161,7 @@
             </td>
             <td>
               г. Санкт-Петербург,<br>
-              ул. Большая<br>
-              Конюшенная,<br>
+              ул. Большая Конюшенная,<br>
               д. 19/8, офис 101
             </td>
           </tr>
@@ -166,7 +175,8 @@
     </main>
 
     <footer class="footer-main">
-      <div class="social footer-main__social">
+      <a class="footer-main__logo  footer-main__logo--hidden  logo-main"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+      <div class="footer-main__social  social">
         <a href="#" class="social__link  social__link--inst">Instagram</a>
         <a href="#" class="social__link  social__link--fb">Facebook</a>
         <a href="#" class="social__link  social__link--twitter">Twitter</a>
@@ -178,7 +188,7 @@
     <div class="modal-add-to-cart  modal-add-to-cart--hidden">
       <form action="#" class="modal-add-to-cart__form" method="post" >
 
-        <h2 class="modal-add-to-cart__form-title">Добавить<br>в корзину</h2>
+        <h2 class="modal-add-to-cart__form-title">Добавить в корзину</h2>
         <span class="modal-add-to-cart__choose-size">Выберите размер:</span>
 
         <div class="modal-add-to-cart__size-list">
