@@ -1,8 +1,11 @@
 .footer-main {
-  width: 260px;
-  @include mobile-side-paddings;
-
   background-color: #f1f1f1;
+}
+
+.footer-main__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  @include mobile-side-paddings;
 }
 
 .footer-main__logo--hidden {
@@ -38,7 +41,7 @@
 }
 
 @media ($tablet-widths) {
-  .footer-main {
+  .footer-main__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -80,7 +83,7 @@
 }
 
 @media ($desktop-widths) {
-  .footer-main {
+  .footer-main__wrapper {
 
     width: 1050px;
     min-height: 95px;

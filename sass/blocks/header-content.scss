@@ -94,19 +94,20 @@
   .header-content__nav-list {
     // width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-top: 0;
   }
 
   .header-content__nav-item {
     flex-grow: 1;
+    max-width: 525px;
   }
 
   .header-content__nav-link {
     //  width: 269px;
-     padding-top: 30px;
-     padding-left: 35px;
+    padding-top: 30px;
+    padding-left: 35px;
 
      @include font-OS-bold(20px, 30px);
   }
@@ -137,7 +138,7 @@
   .header-content__nav-list {
     justify-content: center;
 
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
   }
 

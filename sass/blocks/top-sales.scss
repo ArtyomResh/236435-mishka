@@ -1,5 +1,6 @@
 .top-sales {
   width: 260px;
+  margin: 0 auto;
   padding-top: 30px;
   @include mobile-side-paddings;
 }
@@ -61,7 +62,7 @@
 @media ($tablet-widths) {
   .top-sales {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 668px;
     padding-top: 15px;
     @include mobile-side-paddings(50px);
