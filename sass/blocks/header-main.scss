@@ -13,8 +13,12 @@
   position: relative;
 }
 
+.header-main__nav {
+  // @include container-fluid;
+}
+
 .header-main__nav-logo-container {
-  width: 260px;
+  // width: 260px;
   padding-top: 22px;
   padding-bottom: 22px;
   @include mobile-side-paddings;
@@ -39,6 +43,10 @@
   &--close {
     background: url("../img/icon-menu-close.svg") no-repeat;
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .header-main__nav-list {
@@ -51,8 +59,6 @@
 
 .header-main__nav-item {
   $nav-item-bottom-padding: 27px !global;
-
-  width: 245px;
   padding-left: 75px;
   padding-top: 27px;
   padding-bottom: $nav-item-bottom-padding;
@@ -66,6 +72,10 @@
 
 .header-main__nav-link {
   position: relative;
+
+  display: block;
+  width: 245px;
+  margin: 0 auto;
 
   @include font-OS-bold(17px, 24px);
   text-decoration: none;
@@ -121,19 +131,22 @@
   }
 
   .header-main__nav-logo-container {
-    flex-grow: 1;
+    // flex-grow: 1;
 
-    width: auto;
+    // width: 290px;
+    width: 39.8%;
     min-height: 44px; //удалить когда будет новое лого
     margin-left: -50px;
-    padding-right: 80px;
+    // padding-right: 80px;
     padding-left: 50px;
+
+    @include outline;
   }
 
   .header-main__nav-item {
     order: 3;
 
-    width: 167px;
+    width: 22%;
     padding-top: 15px;
     padding-left: 0px;
 
@@ -142,7 +155,7 @@
     &--search {
       order: 1;
 
-      width: auto;
+      width: 0;
       padding-top: 27px;
       padding-right: 6px;
       padding-left: 74px;
@@ -165,6 +178,8 @@
   }
 
   .header-main__nav-link {
+    display: inline;
+
     @include font-OS-bold(15px, 24px);
 
     &--search {
@@ -181,18 +196,32 @@
 
   .header-main__nav-logo-container {
     order: 2;
+    flex-grow: 1;
 
-    margin-left: 0;
+    // width: 27%;
+    width: 240px;
+    // width: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 0;
-    padding-left: 60px;
+    padding-left: 0;
+    // padding-left: 60px;
+
+    @include outline;
+  }
+
+  .header-main__logo {
+    margin-left: 31%;
   }
 
   .header-main__nav-item {
     order: 1;
 
     width: 185px;
+    // width: 16.8%;
     padding-top: 30px;
     padding-left: 35px;
+    // padding-left: 3.04%;
 
       @include main-menu-shadows
 
@@ -206,7 +235,7 @@
     &--search {
       order: 3;
 
-      width: auto;
+      width: 0;
       padding-top: 27px;
       padding-left: 74px;
 
@@ -216,6 +245,7 @@
     &--cart {
       order: 4;
       width: 235px;
+      // width: 20.4%;
       padding-left: 80px;
     }
 
@@ -224,6 +254,7 @@
 
       display: block;
       width: 220px;
+      // width: 20.4%;
       padding-top: 15px;
       padding-left: 0;
 

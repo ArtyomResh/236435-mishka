@@ -26,14 +26,24 @@
 }
 
 @mixin container () {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   @media ($tablet-widths) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media ($desktop-widths) {
-    width: 1150px;
+    min-width: 1150px;
   }
 }
+
+// @mixin container-fluid () {
+//   width: auto;
+//
+//   @media ($tablet-widths) {
+//     width: 87%;        // 668px / 768px ~= 87%
+//     max-width: 1050px;  /* 1050px / .87 ~= 1206px (центровка начнётся чуть позже 1150) */
+//     margin: 0 auto;
+//   }
+// }
