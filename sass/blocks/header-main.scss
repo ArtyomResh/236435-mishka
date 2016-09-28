@@ -13,12 +13,7 @@
   position: relative;
 }
 
-.header-main__nav {
-  // @include container-fluid;
-}
-
 .header-main__nav-logo-container {
-  // width: 260px;
   padding-top: 22px;
   padding-bottom: 22px;
   @include mobile-side-paddings;
@@ -117,6 +112,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
+    box-sizing: border-box;
+    width: 100%;
     padding-left: 50px;
 
     &::after {
@@ -131,22 +128,24 @@
   }
 
   .header-main__nav-logo-container {
-    // flex-grow: 1;
 
-    // width: 290px;
-    width: 39.8%;
-    min-height: 44px; //удалить когда будет новое лого
+    flex-grow: 1;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 87px; //удалить когда будет новое лого
     margin-left: -50px;
-    // padding-right: 80px;
     padding-left: 50px;
+  }
 
-    @include outline;
+  .header-main__logo {
+    margin: 0;
   }
 
   .header-main__nav-item {
     order: 3;
 
-    width: 22%;
+    width: 167px;
     padding-top: 15px;
     padding-left: 0px;
 
@@ -156,6 +155,7 @@
       order: 1;
 
       width: 0;
+      margin-left: -392px;
       padding-top: 27px;
       padding-right: 6px;
       padding-left: 74px;
@@ -169,7 +169,7 @@
     &--cart {
       order: 2;
 
-      width: 235px;
+      width: 230px;
       padding-top: 30px;
       padding-left: 80px;
 
@@ -198,30 +198,17 @@
     order: 2;
     flex-grow: 1;
 
-    // width: 27%;
-    width: 240px;
-    // width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -455px;
     padding-right: 0;
     padding-left: 0;
-    // padding-left: 60px;
-
-    @include outline;
-  }
-
-  .header-main__logo {
-    margin-left: 31%;
   }
 
   .header-main__nav-item {
     order: 1;
 
     width: 185px;
-    // width: 16.8%;
     padding-top: 30px;
     padding-left: 35px;
-    // padding-left: 3.04%;
 
       @include main-menu-shadows
 
@@ -245,7 +232,6 @@
     &--cart {
       order: 4;
       width: 235px;
-      // width: 20.4%;
       padding-left: 80px;
     }
 
@@ -254,7 +240,6 @@
 
       display: block;
       width: 220px;
-      // width: 20.4%;
       padding-top: 15px;
       padding-left: 0;
 
