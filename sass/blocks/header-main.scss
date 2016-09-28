@@ -21,6 +21,13 @@
   @include main-menu-shadows;
 }
 
+.header-main__logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
+}
+
 .header-main__nav-toggle {
   position: absolute;
   top: 29px;
@@ -196,11 +203,14 @@
 
   .header-main__nav-logo-container {
     order: 2;
-    flex-grow: 1;
 
     margin-left: -455px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .header-main__logo {
+    margin: 0 auto;
   }
 
   .header-main__nav-item {

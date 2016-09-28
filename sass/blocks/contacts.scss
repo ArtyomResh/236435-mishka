@@ -1,5 +1,6 @@
 .contacts {
   width: 260px;
+  margin: 0 auto;
   padding-top: 35px;
   @include mobile-side-paddings;
 }
@@ -40,6 +41,8 @@
 
   margin-left: -30px;
   margin-bottom: 30px;
+
+  @include outline;
 
   &::after {
     position: absolute;
