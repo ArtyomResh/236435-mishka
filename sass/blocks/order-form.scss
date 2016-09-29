@@ -14,7 +14,8 @@
   line-height: 24px;
 }
 
-.order-form__fieldset {
+.order-form__fieldset-wrapper {
+  margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -308,7 +309,7 @@
     line-height: 30px;
   }
 
-  .order-form__fieldset {
+  .order-form__fieldset-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -500,16 +501,16 @@
   }
 
   .order-form__warning {
-    float: right;
+    order: 5;
     margin-top: 5px;
-    margin-right: 50px;
 
     font-size: 17px;
   }
 
   .order-form__btn {
+    order: 4;
+    margin-right: auto;
     width: 230px;
-    margin-left: 50px;
   }
 }
 
@@ -525,7 +526,7 @@
     margin-top: 125px;
   }
 
-  .order-form__fieldset {
+  .order-form__fieldset-wrapper {
     justify-content: flex-start;
 
     width: 1050px;
@@ -625,10 +626,10 @@
   }
 
   .order-form__warning {
-    margin-right: 225px;
+    margin-right: 175px;
   }
 
   .order-form__btn {
-    margin-left: 225px;
+    margin-left: 175px;
   }
 }
