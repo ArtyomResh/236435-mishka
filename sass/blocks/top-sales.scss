@@ -2,6 +2,7 @@
   position: relative;
 
   width: 260px;
+  margin: 0 auto;
   padding-top: 30px;
   @include mobile-side-paddings;
 
@@ -78,7 +79,7 @@
   .top-sales {
     width: 668px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 15px;
     @include mobile-side-paddings(50px);
 

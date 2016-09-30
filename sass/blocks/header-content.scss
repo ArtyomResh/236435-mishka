@@ -34,7 +34,6 @@
 
   display: block;
 
-  width: 260px;
   padding-top: 25px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -98,7 +97,7 @@
   .header-content {
     position: relative;
 
-    width: 768px;
+    min-width: 768px;
     margin-top: -72px;
 
     &::after {
@@ -147,10 +146,14 @@
     margin-top: 0;
   }
 
+  .header-content__nav-item {
+    flex-grow: 1;
+    max-width: 525px;
+  }
+
   .header-content__nav-link {
-     width: 269px;
-     padding-top: 30px;
-     padding-left: 35px;
+    padding-top: 30px;
+    padding-left: 35px;
 
      @include font-OS-bold(20px, 30px);
   }
@@ -164,7 +167,7 @@
 
 @media ($desktop-widths) {
   .header-content {
-    width: 1150px;
+    min-width: 1150px;
 
     &::after {
       height: 18px;
@@ -184,6 +187,17 @@
     &--index {
       padding-bottom: 360px;
     }
+  }
+
+  .header-content__nav-list {
+    justify-content: center;
+
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .header-content__nav-item {
+    flex-grow: 0;
   }
 
   .header-content__nav-link {

@@ -17,6 +17,14 @@
 .catalog-item__description {
   padding-right: 28px;
   padding-left: 28px;
+
+  &:hover  {
+    box-shadow: 0 10px 10px 0px rgba(#000000, 0.1);
+  }
+
+  &:active  {
+    box-shadow: 0 6px 6px 0px rgba(#000000, 0.1);
+  }
 }
 
 .catalog-item__title {

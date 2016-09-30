@@ -11,3 +11,9 @@
     margin: 0;
   }
 }
+
+@media ($desktop-widths) {
+  .logo-main {
+    margin: 0 auto;
+  }
+}

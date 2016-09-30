@@ -1,8 +1,11 @@
 .footer-main {
-  width: 260px;
-  @include mobile-side-paddings;
-
   background-color: #f1f1f1;
+}
+
+.footer-main__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  @include mobile-side-paddings;
 }
 
 .footer-main__logo {
@@ -66,7 +69,7 @@
 }
 
 @media ($tablet-widths) {
-  .footer-main {
+  .footer-main__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -80,8 +83,7 @@
 
   .footer-main__logo {
     display: block;
-    width: 185px; //удалить и заменить на другой логотип
-    height: 34px;
+    width: 185px;
   }
 
   .footer-main__social {
@@ -108,11 +110,14 @@
 }
 
 @media ($desktop-widths) {
-  .footer-main {
+  .footer-main__wrapper {
 
     width: 1050px;
-    min-height: 95px;
     margin-top: 105px;
     padding-top: 50px;
+  }
+
+  .footer-main__logo {
+    margin: 0;
   }
 }

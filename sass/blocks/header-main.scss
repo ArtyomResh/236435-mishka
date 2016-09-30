@@ -16,7 +16,6 @@
 }
 
 .header-main__nav-logo-container {
-  width: 260px;
   padding-top: 22px;
   padding-bottom: 22px;
   @include mobile-side-paddings;
@@ -52,6 +51,10 @@
   &--close {
     background: url("../img/icon-menu-close.svg") no-repeat;
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .header-main__nav-list {
@@ -65,7 +68,6 @@
 .header-main__nav-item {
   $nav-item-bottom-padding: 27px !global;
 
-  width: 245px;
   padding-left: 75px;
   padding-top: 27px;
   padding-bottom: $nav-item-bottom-padding;
@@ -79,6 +81,10 @@
 
 .header-main__nav-link {
   position: relative;
+
+  display: block;
+  width: 245px;
+  margin: 0 auto;
 
   @include font-OS-bold(17px, 24px);
   text-decoration: none;
@@ -141,6 +147,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
+    box-sizing: border-box;
+    width: 100%;
     padding-left: 50px;
 
     &::after {
@@ -157,9 +165,9 @@
   .header-main__nav-logo-container {
     flex-grow: 1;
 
-    width: auto;
+    box-sizing: border-box;
+    width: 100%;
     margin-left: -50px;
-    padding-right: 80px;
     padding-left: 50px;
   }
 
@@ -175,7 +183,8 @@
     &--search {
       order: 1;
 
-      width: auto;
+      width: 0;
+      margin-left: -392px;
       padding-top: 27px;
       padding-right: 6px;
       padding-left: 74px;
@@ -189,7 +198,7 @@
     &--cart {
       order: 2;
 
-      width: 235px;
+      width: 230px;
       padding-top: 30px;
       padding-left: 80px;
 
@@ -198,6 +207,8 @@
   }
 
   .header-main__nav-link {
+    display: inline;
+
     @include font-OS-bold(15px, 24px);
 
     &--search {
@@ -214,11 +225,16 @@
 
   .header-main__nav-logo-container {
     order: 2;
+    flex-grow: 1;
 
-    margin-left: 0;
-    padding-top: 9px;
-    padding-right: 0;
-    padding-left: 60px;
+    margin-left: -455px;
+
+    padding-right: 75px;
+    padding-left: 0;
+  }
+
+  .header-main__logo {
+    margin-top: -15px;
   }
 
   .header-main__nav-item {
@@ -228,7 +244,7 @@
     padding-top: 30px;
     padding-left: 35px;
 
-      @include main-menu-shadows
+    @include main-menu-shadows
 
     &:nth-child(2) {
       margin-left: -50px;
@@ -240,7 +256,7 @@
     &--search {
       order: 3;
 
-      width: auto;
+      width: 0;
       padding-top: 27px;
       padding-left: 74px;
 
