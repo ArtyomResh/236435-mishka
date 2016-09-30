@@ -11,6 +11,8 @@
 
 .header-main {
   position: relative;
+
+  z-index: 1;
 }
 
 .header-main__nav-logo-container {
@@ -20,6 +22,17 @@
   @include mobile-side-paddings;
 
   @include main-menu-shadows;
+}
+
+.header-main__logo {
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .header-main__nav-toggle {
@@ -87,10 +100,31 @@
 
   &--search::before {
     background: url("../img/icon-search.svg") no-repeat 50%;
+    filter: grayscale(1);
   }
 
   &--cart::before {
     background: url("../img/icon-cart.svg") no-repeat 50%;
+    filter: grayscale(1);
+  }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:hover::before {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+    filter: grayscale(0);
+  }
+
+  &[href]:active::before {
+    opacity: 1;
+    filter: grayscale(0);
   }
 }
 

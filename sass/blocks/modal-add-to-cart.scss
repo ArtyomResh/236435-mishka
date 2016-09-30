@@ -57,6 +57,10 @@
   @include font-OS-bold(17px, 50px);
 
   border: 2px solid #ececec;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
 }
 
 .modal-add-to-cart__btn {

@@ -5,8 +5,23 @@
   background-color: #f1f1f1;
 }
 
-.footer-main__logo--hidden {
-  display: none;
+.footer-main__logo {
+
+  filter: grayscale(1);
+  filter: brightness(0);
+
+  &[href]:hover {
+    filter: grayscale(0);
+  }
+
+  &[href]:active {
+    filter: grayscale(0);
+    opacity: 0.3;
+  }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .footer-main__social {
@@ -35,6 +50,19 @@
   @include font-OS-bold(19px, 18px)
   text-decoration: none;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-main__copy-right img {
+
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @media ($tablet-widths) {
