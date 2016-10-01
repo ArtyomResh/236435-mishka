@@ -11,6 +11,7 @@
 
 .header-main {
   position: relative;
+  min-width: 320px;
 
   z-index: 1;
 }
@@ -58,6 +59,7 @@
 }
 
 .header-main__nav-list {
+  min-width: 320px;
   @include ul-reset;
 
   &--hidden {
