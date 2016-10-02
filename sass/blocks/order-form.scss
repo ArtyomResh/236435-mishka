@@ -189,7 +189,7 @@
     border-color: #62d1ba;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border-color: #f0b1b1;
   }
 }
@@ -229,7 +229,7 @@
     border-color: #62d1ba;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border-color: #f0b1b1;
   }
 }
@@ -297,7 +297,7 @@
     border-color: #62d1ba;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border-color: #f0b1b1;
   }
 }
@@ -362,7 +362,7 @@
     border-color: #62d1ba;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border-color: #f0b1b1;
   }
 }
