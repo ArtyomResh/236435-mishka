@@ -8,8 +8,23 @@
   @include mobile-side-paddings;
 }
 
-.footer-main__logo--hidden {
-  display: none;
+.footer-main__logo {
+
+  filter: grayscale(1);
+  filter: brightness(0);
+
+  &[href]:hover {
+    filter: grayscale(0);
+  }
+
+  &[href]:active {
+    filter: grayscale(0);
+    opacity: 0.3;
+  }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .footer-main__social {
@@ -38,6 +53,19 @@
   @include font-OS-bold(19px, 18px)
   text-decoration: none;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-main__copy-right img {
+
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @media ($tablet-widths) {
@@ -55,8 +83,7 @@
 
   .footer-main__logo {
     display: block;
-    width: 185px; //удалить и заменить на другой логотип
-    height: 34px;
+    width: 185px;
   }
 
   .footer-main__social {
@@ -86,8 +113,11 @@
   .footer-main__wrapper {
 
     width: 1050px;
-    min-height: 95px;
     margin-top: 105px;
     padding-top: 50px;
+  }
+
+  .footer-main__logo {
+    margin: 0;
   }
 }

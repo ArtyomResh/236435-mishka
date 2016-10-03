@@ -8,6 +8,18 @@
   width: 30px;
   height: 30px;
 
+  filter: grayscale(1);
+  filter: brightness(0);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+
+  &:active {
+    filter: grayscale(0);
+    opacity: 0.3;
+  }
+
   &--inst {
     background: url("../img/icon-insta.svg") no-repeat 50% 100%;
   }
