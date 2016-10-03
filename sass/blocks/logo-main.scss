@@ -1,15 +1,5 @@
 .logo-main {
   display: block;
-
-  width: 86px;
-  height: 35px;
-  margin: 0 auto;
-}
-
-@media ($tablet-widths) {
-  .logo-main {
-    margin: 0;
-  }
 }
 
 @media ($desktop-widths) {

@@ -10,7 +10,7 @@
            (min-width: 320px) and (min-resolution: 1.5dppx) {
              background-image: url("../img/hero-mobile@2x.jpg");
              background-size: 575px auto;
-           }
+    }
   }
 }
 
@@ -140,6 +140,7 @@
   }
 
   .header-content__nav-list {
+    // width: auto;
     display: flex;
     justify-content: center;
 
