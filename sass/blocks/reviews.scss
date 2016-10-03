@@ -19,6 +19,15 @@
 
   border: 1px solid #ececec;
   background: url(../img/icon-left-arrow.svg) no-repeat 50%;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__next {
@@ -28,6 +37,15 @@
 
   border: 1px solid #ececec;
   background: url(../img/icon-right-arrow.svg) no-repeat 50%;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__write-review {
@@ -46,6 +64,12 @@
     @include tablet-side-paddings;
 
     background: url("../img/review@1x.jpg") no-repeat 0% 100%;
+
+    @media (min-width: 768px) and (min-resolution: 144dpi),
+           (min-width: 768px) and (min-resolution: 1.5dppx) {
+             background-image: url("../img/review@2x.jpg");
+             background-size: 350px auto;
+           }
   }
 
   .reviews__title {

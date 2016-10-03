@@ -11,6 +11,9 @@
 
 .header-main {
   position: relative;
+  min-width: 320px;
+
+  z-index: 1;
 }
 
 .header-main__nav-logo-container {
@@ -22,10 +25,14 @@
 }
 
 .header-main__logo {
-  display: block;
-  width: 86px;
-  height: 35px;
-  margin: 0 auto;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .header-main__nav-toggle {
@@ -52,6 +59,7 @@
 }
 
 .header-main__nav-list {
+  min-width: 320px;
   @include ul-reset;
 
   &--hidden {
@@ -61,6 +69,7 @@
 
 .header-main__nav-item {
   $nav-item-bottom-padding: 27px !global;
+
   padding-left: 75px;
   padding-top: 27px;
   padding-bottom: $nav-item-bottom-padding;
@@ -99,10 +108,31 @@
 
   &--search::before {
     background: url("../img/icon-search.svg") no-repeat 50%;
+    filter: grayscale(1);
   }
 
   &--cart::before {
     background: url("../img/icon-cart.svg") no-repeat 50%;
+    filter: grayscale(1);
+  }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:hover::before {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+    filter: grayscale(0);
+  }
+
+  &[href]:active::before {
+    opacity: 1;
+    filter: grayscale(0);
   }
 }
 
@@ -140,7 +170,6 @@
 
     box-sizing: border-box;
     width: 100%;
-    min-height: 87px; //удалить когда будет новое лого
     margin-left: -50px;
     padding-left: 50px;
   }
@@ -203,14 +232,16 @@
 
   .header-main__nav-logo-container {
     order: 2;
+    flex-grow: 1;
 
     margin-left: -455px;
-    padding-right: 0;
+
+    padding-right: 75px;
     padding-left: 0;
   }
 
   .header-main__logo {
-    margin: 0 auto;
+    margin-top: -15px;
   }
 
   .header-main__nav-item {
@@ -220,7 +251,7 @@
     padding-top: 30px;
     padding-left: 35px;
 
-      @include main-menu-shadows
+    @include main-menu-shadows
 
     &:nth-child(2) {
       margin-left: -50px;
