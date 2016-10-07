@@ -18,13 +18,18 @@
 
 .header-main__nav-logo-container {
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 12px;
   @include mobile-side-paddings;
+
+  text-align: center;
 
   @include main-menu-shadows;
 }
 
 .header-main__logo {
+
+  width: 85px;
+  margin: 0 auto;
 
   &[href]:hover {
     opacity: 0.6;
@@ -108,11 +113,13 @@
 
   &--search::before {
     background: url("../img/icon-search.svg") no-repeat 50%;
+    filter: url("../img/grayfilter.svg#grayscale");
     filter: grayscale(1);
   }
 
   &--cart::before {
     background: url("../img/icon-cart.svg") no-repeat 50%;
+    filter: url("../img/grayfilter.svg#grayscale");
     filter: grayscale(1);
   }
 
@@ -122,17 +129,17 @@
 
   &[href]:hover::before {
     opacity: 1;
-    filter: grayscale(0);
+    filter: none;
   }
 
   &[href]:active {
     opacity: 0.3;
-    filter: grayscale(0);
+    filter: none;
   }
 
   &[href]:active::before {
     opacity: 1;
-    filter: grayscale(0);
+    filter: none;
   }
 }
 
@@ -172,6 +179,9 @@
     width: 100%;
     margin-left: -50px;
     padding-left: 50px;
+    padding-bottom: 10px;
+
+    text-align: left;
   }
 
   .header-main__logo {
@@ -235,12 +245,15 @@
     flex-grow: 1;
 
     margin-left: -455px;
+    padding: 0;
+    padding-top: 20px;
 
-    padding-right: 75px;
-    padding-left: 0;
+    text-align: center;
   }
 
   .header-main__logo {
+    width: 148px;
+    margin: 0 auto;
     margin-top: -15px;
   }
 

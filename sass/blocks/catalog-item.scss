@@ -68,16 +68,17 @@
 
   background: url("../img/icon-cart.svg") no-repeat 50%;
   opacity: 0.2;
+  filter: url('../img/grayfilter.svg#grayscale');
   filter: grayscale(1);
 
   &:hover {
     opacity: 1;
-    filter: grayscale(0);
+    filter: none;
   }
 
   &:active {
     opacity: 0.3;
-    filter: grayscale(0);
+    filter: none;
   }
 }
 

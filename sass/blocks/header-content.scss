@@ -1,5 +1,4 @@
 .header-content {
-  margin-bottom: 30px;
 
   background-color:  #f1f1f1;
 
@@ -98,6 +97,7 @@
     position: relative;
 
     min-width: 768px;
+    margin-bottom: 30px;
     margin-top: -72px;
 
     &::after {
@@ -140,7 +140,6 @@
   }
 
   .header-content__nav-list {
-    // width: auto;
     display: flex;
     justify-content: center;
 
@@ -149,7 +148,7 @@
 
   .header-content__nav-item {
     flex-grow: 1;
-    max-width: 525px;
+    max-width: 43.5%;
   }
 
   .header-content__nav-link {
@@ -198,11 +197,12 @@
   }
 
   .header-content__nav-item {
-    flex-grow: 0;
+    max-width: 525px;
   }
 
   .header-content__nav-link {
      width: 455px;
+     padding-top: 25px;
      padding-left: 40px;
   }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>HTML Academy: Мишка, личный проект Реш А.Р.</title>
+    <title>Мишка, личный проект Реш А.Р.</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -62,45 +62,47 @@
       </header>
 
       <article class="top-sales">
-        <div class="top-sales__title-wrapper">
-          <h2 class="top-sales__title">Вязаные корзинки</h2>
-          <span class="top-sales__sub">Товар недели</span>
-        </div>
-        <div class="top-sales__content-wrapper">
-          <p class="top-sales__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="top-sales__attributes">
-            <tr>
-              <td>
-                Цвет:
-              </td>
-              <td>
-                «Тиффани»/серый
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Диаметр:
-              </td>
-              <td>
-                25 см
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Высота:
-              </td>
-              <td>
-                15 см
-              </td>
-            </tr>
-          </table>
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="top-sales__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
-          </picture>
-          <span class="top-sales__price">Цена: 990  руб.</span>
-          <a href="#" class="btn  top-sales__btn">Заказать</a>
+        <div class="top-sales-wrapper">
+          <div class="top-sales__title-wrapper">
+            <h2 class="top-sales__title">Вязаные корзинки</h2>
+            <span class="top-sales__sub">Товар недели</span>
+          </div>
+          <div class="top-sales__content-wrapper">
+            <p class="top-sales__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="top-sales__attributes">
+              <tr>
+                <td>
+                  Цвет:
+                </td>
+                <td>
+                  «Тиффани»/серый
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Диаметр:
+                </td>
+                <td>
+                  25 см
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Высота:
+                </td>
+                <td>
+                  15 см
+                </td>
+              </tr>
+            </table>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="top-sales__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+            </picture>
+            <span class="top-sales__price">Цена: 990  руб.</span>
+            <a href="#" class="btn  top-sales__btn">Заказать</a>
+          </div>
         </div>
       </article>
 
@@ -155,28 +157,30 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__table-of-contacts">
-          <tr>
-            <td>
-              e-mail:
-            </td>
-            <td>
-              <a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              адрес:
-            </td>
-            <td>
-              г. Санкт-Петербург,<br>
-              ул. Большая Конюшенная,<br>
-              д. 19/8, офис 101
-            </td>
-          </tr>
-        </table>
-        <div class="contacts__map">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <table class="contacts__table-of-contacts">
+            <tr>
+              <td>
+                e-mail:
+              </td>
+              <td>
+                <a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                адрес:
+              </td>
+              <td>
+                г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,<br>
+                д. 19/8, офис 101
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="contacts__map" id="YMapsID">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
@@ -222,8 +226,11 @@
 
       </form>
     </div>
-    <script src="js/header-main.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/top-sales.js"></script>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script src="js/header-main.js" type="text/javascript"></script>
+    <script src="js/modal.js" type="text/javascript"></script>
+    <script src="js/top-sales.js" type="text/javascript"></script>
+    <script src="js/contacts.js" type="text/javascript"></script>
+    <script src="js/picturefill.js" type="text/javascript"></script>
   </body>
 </html>

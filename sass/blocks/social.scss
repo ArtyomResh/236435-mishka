@@ -8,15 +8,15 @@
   width: 30px;
   height: 30px;
 
-  filter: grayscale(1);
+  filter: url("../img/darkengrayscalefilter.svg#darkengrayscale");
   filter: brightness(0);
 
   &:hover {
-    filter: grayscale(0);
+    filter: none;
   }
 
   &:active {
-    filter: grayscale(0);
+    filter: none;
     opacity: 0.3;
   }
 
