@@ -3,22 +3,24 @@
 }
 
 .footer-main__wrapper {
-  width: 260px;
+  min-width: 260px;
   margin: 0 auto;
   @include mobile-side-paddings;
 }
 
+.footer-main__logo svg {
+  &:hover {
+    fill: black;
+  }
+}
+
 .footer-main__logo {
 
-  filter: grayscale(1);
-  filter: brightness(0);
-
-  &[href]:hover {
-    filter: grayscale(0);
+  &[href]:hover svg{
+    fill: #63d1bb;
   }
 
   &[href]:active {
-    filter: grayscale(0);
     opacity: 0.3;
   }
 
@@ -29,13 +31,15 @@
 
 .footer-main__social {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
 
+  width: 180px;
+  margin: 0 auto;
   padding-top: 20px;
   padding-right: 40px;
   padding-left: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -43,8 +47,10 @@
 .footer-main__copy-right {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
+  width: 185px;
+  margin: 0 auto;
   padding-top: 20px;
   padding-left: 25px;
   padding-bottom: 25px;
@@ -88,22 +94,24 @@
 
   .footer-main__social {
     padding: 0;
-    padding-top: 8px;
+    padding-top: 5px;
     width: 180px;
+    margin: 0;
 
     border: none;
   }
 
   .footer-main__copy-right {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     width: 184px;
+    margin: 0;
     padding:0;
-    padding-top: 10px;
+    padding-top: 8px;
 
-    @include font-OS-bold(19px, 18px)
+    @include font-OS-bold(19px, 24px)
     text-decoration: none;
     color: #000000;
   }
@@ -119,5 +127,9 @@
 
   .footer-main__logo {
     margin: 0;
+  }
+
+  .footer-main__copy-right {
+    @include font-OS-bold(19px, 28px)
   }
 }

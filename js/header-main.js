@@ -61,7 +61,7 @@ document.documentElement.onload = navSwitchLoad();
 
 window.onresize = navSwitchResize;
 
-navToggle.addEventListener("click", function() {
+navToggle.addEventListener("click", function(event) {
   event.preventDefault();
   for (i = 0; i < navItems.length; i++) {
     if (navItems[i].classList.contains("header-main__nav-item--hidden")) {

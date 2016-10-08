@@ -12,17 +12,18 @@ var storageTel = localStorage.getItem("tel");
 var storageEmail = localStorage.getItem("email");
 
 orderForm.addEventListener("submit", function(event) {
-    localStorage.setItem("firstname", firstname.value);
-    localStorage.setItem("surname", surname.value);
-    localStorage.setItem("patronymic", patronymic.value);
-    localStorage.setItem("tel", tel.value);
-    localStorage.setItem("email", email.value);
+  event.preventDefault();
+  localStorage.setItem("firstname", firstname.value);
+  localStorage.setItem("surname", surname.value);
+  localStorage.setItem("patronymic", patronymic.value);
+  localStorage.setItem("tel", tel.value);
+  localStorage.setItem("email", email.value);
 });
 
 window.addEventListener("load", function(event) {
-    firstname.value = storageFirstname;
-    surname.value = storageSurname;
-    patronymic.value = storagePatronymic;
-    tel.value = storageTel;
-    email.value = storageEmail;
+  firstname.value = storageFirstname;
+  surname.value = storageSurname;
+  patronymic.value = storagePatronymic;
+  tel.value = storageTel;
+  email.value = storageEmail;
 });
