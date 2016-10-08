@@ -2,11 +2,6 @@
   box-shadow:
     inset 0 1px 0 0 $border-color,
     0 1px 0 0 $border-color;
-
-    @media ($tablet-widths) {
-      box-shadow:
-        0 1px 0 0 #ececec;
-    }
 }
 
 .header-main {
@@ -90,56 +85,35 @@
   position: relative;
 
   display: block;
-  width: 245px;
+  width: 225px;
   margin: 0 auto;
 
   @include font-OS-bold(17px, 24px);
   text-decoration: none;
   color: #000000;
 
-  &::before  {
-    position: absolute;
-    top: 50%;
-    left: -45px;
-
-    width: 20px;
-    height: 20px;
-
-    opacity: 0.2;
-    transform: translateY(-50%);
-
-    content: "";
+  &--search svg {
+    margin-right: 20px;
+    margin-left: -45px;
+    padding-top: 3px;
   }
 
-  &--search::before {
-    background: url("../img/icon-search.svg") no-repeat 50%;
-    filter: url("../img/grayfilter.svg#grayscale");
-    filter: grayscale(1);
-  }
-
-  &--cart::before {
-    background: url("../img/icon-cart.svg") no-repeat 50%;
-    filter: url("../img/grayfilter.svg#grayscale");
-    filter: grayscale(1);
+  &--cart svg {
+    margin-right: 20px;
+    margin-left: -45px;
+    padding-top: 5px;
   }
 
   &[href]:hover {
     opacity: 0.6;
   }
 
-  &[href]:hover::before {
-    opacity: 1;
-    filter: none;
+  &[href]:hover > svg {
+    fill: #63d1bb;
   }
 
   &[href]:active {
     opacity: 0.3;
-    filter: none;
-  }
-
-  &[href]:active::before {
-    opacity: 1;
-    filter: none;
   }
 }
 
@@ -202,8 +176,9 @@
 
       width: 0;
       margin-left: -392px;
-      padding-top: 27px;
+      padding-top: 35px;
       padding-right: 6px;
+      padding-bottom: 0;
       padding-left: 74px;
 
       border-right:1px solid $border-color;
@@ -216,7 +191,7 @@
       order: 2;
 
       width: 230px;
-      padding-top: 30px;
+      padding-top: 25px;
       padding-left: 80px;
 
       @include main-menu-shadows
@@ -233,7 +208,15 @@
     }
 
     &--cart {
+      display: flex;
+      padding-top: 6px;
       @include font-OS-bold(17px, 24px);
+    }
+
+    &--cart svg {
+      margin-top: -1px;
+      margin-left: -50px;
+      margin-right: 28px;
     }
   }
 }
@@ -277,7 +260,7 @@
       order: 3;
 
       width: 0;
-      padding-top: 27px;
+      padding-top: 35px;
       padding-left: 74px;
 
       border-left: none;
@@ -286,6 +269,7 @@
     &--cart {
       order: 4;
       width: 235px;
+      padding-top: 25px;
       padding-left: 80px;
     }
 
@@ -310,6 +294,10 @@
 
     &--search {
       font-size: 0;
+    }
+
+    &--cart svg {
+      margin-right: 30px;
     }
   }
 }

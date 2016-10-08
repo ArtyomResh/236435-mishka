@@ -5,30 +5,7 @@
 .social__link {
   display: block;
 
-  width: 30px;
-  height: 30px;
-
-  filter: url("../img/darkengrayscalefilter.svg#darkengrayscale");
-  filter: brightness(0);
-
-  &:hover {
-    filter: none;
-  }
-
   &:active {
-    filter: none;
     opacity: 0.3;
-  }
-
-  &--inst {
-    background: url("../img/icon-insta.svg") no-repeat 50% 100%;
-  }
-
-  &--fb {
-    background: url("../img/icon-fb.svg") no-repeat 50% 100%;
-  }
-
-  &--twitter {
-    background: url("../img/icon-twitter.svg") no-repeat 50% 100%;
   }
 }

@@ -57,7 +57,7 @@
   .reviews {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    // justify-content: flex-end;
 
     width: 668px;
     padding-top: 70px;
@@ -91,6 +91,7 @@
 
     width: 175px;
     margin-bottom: 40px;
+    margin-left: auto;
   }
 
   .reviews__prev {

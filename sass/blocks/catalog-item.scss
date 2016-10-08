@@ -66,19 +66,8 @@
 
   font-size: 0;
 
-  background: url("../img/icon-cart.svg") no-repeat 50%;
-  opacity: 0.2;
-  filter: url('../img/grayfilter.svg#grayscale');
-  filter: grayscale(1);
-
-  &:hover {
-    opacity: 1;
-    filter: none;
-  }
-
   &:active {
     opacity: 0.3;
-    filter: none;
   }
 }
 
