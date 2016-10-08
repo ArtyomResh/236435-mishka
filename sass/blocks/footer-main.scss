@@ -8,7 +8,17 @@
   @include mobile-side-paddings;
 }
 
+.footer-main__logo svg {
+  &:hover {
+    fill: black;
+  }
+}
+
 .footer-main__logo {
+
+  &[href]:hover svg{
+    fill: #63d1bb;
+  }
 
   &[href]:active {
     opacity: 0.3;

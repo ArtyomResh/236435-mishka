@@ -159,7 +159,7 @@
 }
 
 .order-form__color:checked + .order-form__color-label::after {
-  background: url("../img/icon-tick.svg") no-repeat 50%;
+  background: url("../img/icons-external/icon-tick.svg") no-repeat 50%;
 }
 
 .order-form__client {
@@ -261,16 +261,13 @@
 
     transform: translateY(-50%);
 
-    background: url("../img/icon-phone.svg") no-repeat 50%;
-    filter: url("../img/grayfilter.svg#grayscale");
-    filter: grayscale(1);
+    background: url("../img/icons-external/icon-phone.svg") no-repeat 50%;
     opacity: 0.2;
 
     content: "";
   }
 
   &:hover::after {
-    filter: none;
     opacity: 1;
   }
 }
@@ -340,9 +337,7 @@
 
   transform: translateY(-50%);
 
-  background: url("../img/icon-mail.svg") no-repeat 50%;
-  filter: url("../img/grayfilter.svg#grayscale");
-  filter: grayscale(1);
+  background: url("../img/icons-external/icon-mail.svg") no-repeat 50%;
   opacity: 0.2;
 
   content: "";
