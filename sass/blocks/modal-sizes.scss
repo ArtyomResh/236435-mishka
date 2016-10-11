@@ -1,4 +1,4 @@
-.modal-add-to-cart {
+.modal-sizes {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -21,35 +21,35 @@
   }
 }
 
-.modal-add-to-cart__form {
+.modal-sizes__form {
   text-align: center;
 }
 
-.modal-add-to-cart__form-title {
+.modal-sizes__form-title {
   margin-bottom: 13px;
 
   text-transform: uppercase;
 }
 
-.modal-add-to-cart__choose-size {
+.modal-sizes__choose-size {
   font-size: 15px;
 }
 
-.modal-add-to-cart__size-list {
+.modal-sizes__size-list {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.modal-add-to-cart__size {
+.modal-sizes__size {
   display: none;
 }
 
-.modal-add-to-cart__size:checked + .modal-add-to-cart__size-label {
+.modal-sizes__size:checked + .modal-sizes__size-label {
   border-color: #63d1bb;
 }
 
-.modal-add-to-cart__size-label {
+.modal-sizes__size-label {
   display: block;
   width: 78px;
   height: 48px;
@@ -63,7 +63,7 @@
   }
 }
 
-.modal-add-to-cart__btn {
+.modal-sizes__btn {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 55px;
@@ -78,7 +78,7 @@
 
 @media ($tablet-widths) {
 
-  .modal-add-to-cart {
+  .modal-sizes {
     width: 354px;
     padding-top: 10px;
 
@@ -90,19 +90,19 @@
       0 10px 35px 1px;
   }
 
-  .modal-add-to-cart__form-title {
+  .modal-sizes__form-title {
     @include font-OS-bold(30px, 57px);
   }
 
-  .modal-add-to-cart__choose-size {
+  .modal-sizes__choose-size {
     font-size: 17px;
   }
 
-  .modal-add-to-cart__size-label {
+  .modal-sizes__size-label {
     width: 108px;
   }
 
-  .modal-add-to-cart__btn {
+  .modal-sizes__btn {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 45px;
