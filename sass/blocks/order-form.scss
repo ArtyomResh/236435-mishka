@@ -393,6 +393,10 @@
   font-size: 14px;
 }
 
+.order-form__text-tablet {
+  display: none;
+}
+
 .order-form__btn {
   width: 100%;
   margin-bottom: 55px;
@@ -645,6 +649,14 @@
     margin-bottom: 0px;
 
     font-size: 17px;
+  }
+
+  .order-form__text-mobile {
+    display: none;
+  }
+
+  .order-form__text-tablet {
+    display: inline;
   }
 
   .order-form__btn {
