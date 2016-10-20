@@ -5,8 +5,8 @@ https://artyomresh.github.io/mishka/
 [Артём Реш](https://htmlacademy.ru/profile/resh)
 
 * BEM;
-* LESS;
-* Grunt;
+* Sass;
+* Gulp;
 * адаптивность.
 
 ---
