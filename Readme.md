@@ -1,6 +1,6 @@
 # Проект «Мишка»
 
-[Артём Реш](https://up.htmlacademy.ru/adaptive/8/user/236435).
+[Артём Реш](https://up.htmlacademy.ru/adaptive/8/user/236435)
 
 * BEM;
 * LESS;
