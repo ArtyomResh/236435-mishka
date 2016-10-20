@@ -1872,7 +1872,7 @@ svg g {
   .order-form__client-label:first-of-type{
     width: 65px; }
   .order-form__tel{
-    width: 485px;
+    width: 480px;
     margin-top: -20px;
     margin-right: auto;
     margin-bottom: 35px;
@@ -1886,7 +1886,7 @@ svg g {
     top: 15%;
     right: 25px; }
   .order-form__email{
-    width: 485px;
+    width: 480px;
     padding-left: 15px;
     margin-bottom: 65px;
     font-size: 19px; }
