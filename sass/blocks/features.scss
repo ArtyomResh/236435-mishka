@@ -30,28 +30,46 @@
   }
 }
 
-.features__list-item--eco::before {
-  background: url("../img/icons-external/icon-feature-1.svg") no-repeat 50%;
+.features__list-item--eco {
+  width: 180px;
+  &::before {
+    background: url("../img/icons-external/icon-feature-1.svg") no-repeat 50%;
+  }
 }
 
-.features__list-item--price::before {
-  background: url("../img/icons-external/icon-feature-3.svg") no-repeat 50%;
+.features__list-item--price {
+  width: 205px;
+  &::before {
+    background: url("../img/icons-external/icon-feature-3.svg") no-repeat 50%;
+  }
 }
 
-.features__list-item--likes::before {
-  background: url("../img/icons-external/icon-feature-5.svg") no-repeat 50%;
+.features__list-item--likes {
+  width: 185px;
+  &::before {
+    background: url("../img/icons-external/icon-feature-5.svg") no-repeat 50%;
+  }
 }
 
-.features__list-item--with-love::before {
-  background: url("../img/icons-external/icon-feature-2.svg") no-repeat 50%;
+.features__list-item--with-love {
+  width: 215px;
+  &::before {
+    background: url("../img/icons-external/icon-feature-2.svg") no-repeat 50%;
+  }
 }
 
-.features__list-item--support::before {
-  background: url("../img/icons-external/icon-feature-4.svg") no-repeat 50%;
+.features__list-item--support {
+  width: 260px;
+  &::before {
+    background: url("../img/icons-external/icon-feature-4.svg") no-repeat 50%;
+  }
 }
 
-.features__list-item--delivery::before {
-  background: url("../img/icons-external/icon-feature-6.svg") no-repeat 50%;
+.features__list-item--delivery {
+  width: 205px;
+  &::before {
+    background: url("../img/icons-external/icon-feature-6.svg") no-repeat 50%;
+  }
 }
 
 
@@ -68,33 +86,48 @@
   }
 
   .features__list-item {
-    width: 334px;
     margin-bottom: 45px;
 
     @include font-OS-bold(20px, 24px)
 
     &--eco {
       order: 1;
+
+      width: 210px;
+      margin-right: auto;
     }
 
     &--price {
       order: 3;
+
+      width: 240px;
+      margin-right: auto;
     }
 
     &--likes {
       order: 5;
+
+      width: 215px;
+      margin-right: auto;
     }
 
     &--with-love {
       order: 2;
+
+      width: 255px;
+      margin-right: 79px;
     }
 
     &--support {
       order: 4;
+      width: 334px
     }
 
     &--delivery {
       order: 6;
+
+      width: 255px;
+      margin-right: 79px;
     }
   }
 }
@@ -115,8 +148,32 @@
   }
 
   .features__list-item {
-    width: 350px;
     margin-bottom: 45px;
     padding-top: 60px;
+
+    &--eco {
+      margin-right: 140px;
+    }
+
+    &--price {
+      margin-right: 110px;
+    }
+
+    &--likes {
+      margin-right: 135px;;
+    }
+
+    &--with-love {
+      margin-right: 270px;
+    }
+
+    &--support {
+      width: 350px;
+        margin-right: 175px;
+    }
+
+    &--delivery {
+      margin-right: 270px;
+    }
   }
 }

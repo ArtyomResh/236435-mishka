@@ -5,7 +5,8 @@
 @mixin font-OS-bold ($size, $height) {
   font-size: $size;
   line-height: $height;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 @mixin mobile-side-paddings ($side-paddings:30px) {
@@ -37,13 +38,3 @@
     min-width: 1150px;
   }
 }
-
-// @mixin container-fluid () {
-//   width: auto;
-//
-//   @media ($tablet-widths) {
-//     width: 87%;        // 668px / 768px ~= 87%
-//     max-width: 1050px;  /* 1050px / .87 ~= 1206px (центровка начнётся чуть позже 1150) */
-//     margin: 0 auto;
-//   }
-// }

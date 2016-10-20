@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>HTML Academy: Каталог, личный проект Реш А.Р.</title>
+    <title>Каталог, личный проект Реш А.Р.</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -31,14 +31,14 @@
             <a class="header-main__nav-link">Каталог товаров</a>
           </li>
           <li class="header-main__nav-item">
-            <a href="form.html" class="header-main__nav-link">Вязание на заказ</a>
+            <a href="form.html" class="header-main__nav-link">Вязание на&nbsp;заказ</a>
           </li>
           <li class="header-main__nav-item  header-main__nav-item--search">
             <a href="#" class="header-main__nav-link  header-main__nav-link--search">
               <svg width="17.6" height="17.6" class="icon">
                 <use xlink:href="#icon-search"></use>
               </svg>
-              <span>Поиск по сайту</span>
+              <span>Поиск по&nbsp;сайту</span>
             </a>
           </li>
           <li class="header-main__nav-item  header-main__nav-item--cart">
@@ -85,7 +85,7 @@
                 <svg width="20.3" height="18.9" class="icon">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                <span>Добавить в корзину</span>
+                <span>Добавить в&nbsp;корзину</span>
               </a>
             </div>
           </div>
@@ -108,7 +108,7 @@
                 <svg width="20.3" height="18.9" class="icon">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                <span>Добавить в корзину</span>
+                <span>Добавить в&nbsp;корзину</span>
               </a>
             </div>
           </div>
@@ -123,7 +123,7 @@
             </picture>
           </a>
           <div class="catalog-item__description">
-            <a href="#" class="catalog-item__title"><h3>Большая корзинка<br>для игрушек</h3></a>
+            <a href="#" class="catalog-item__title"><h3>Большая корзинка<br>для игрушек</h3></a> <!--Оставил <br>, т.к. это единичный случай, менят ширину всех элеметов не имеет смысла, ровно как давать новый класс одному товару или менять стили по nth-type в каталоге товаров-->
             <p class="catalog-item__attributes">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__buy">
               <span class="catalog-item__price">1 500 руб.</span>
@@ -131,7 +131,7 @@
                 <svg width="20.3" height="18.9" class="icon">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                <span>Добавить в корзину</span>
+                <span>Добавить в&nbsp;корзину</span>
               </a>
             </div>
           </div>
@@ -149,10 +149,10 @@
           </picture>
         </div>
         <p class="item-video__description">
-          По просьбам наших
+          По&nbsp;просьбам наших
           любимых фолловеров мы
           сняли для вас подробное
-          видео о том, как появляются
+          видео о&nbsp;том, как появляются
           наши товары.
         </p>
         <a href="#" class="btn item-video__btn">Сделать заказ</a>
@@ -192,24 +192,24 @@
     </footer>
 
     <div class="modal-overlay  modal-overlay--hidden"></div>
-    <div class="modal-add-to-cart  modal-add-to-cart--hidden">
-      <form action="#" class="modal-add-to-cart__form" method="post" >
+    <div class="modal-sizes  modal-sizes--hidden">
+      <form action="#" class="modal-sizes__form" method="post">
 
-        <h2 class="modal-add-to-cart__form-title">Добавить<br>в корзину</h2>
-        <span class="modal-add-to-cart__choose-size">Выберите размер:</span>
+        <h2 class="modal-sizes__form-title">Добавить в&nbsp;корзину</h2>
+        <span class="modal-sizes__choose-size">Выберите размер:</span>
 
-        <div class="modal-add-to-cart__size-list">
-          <input class="modal-add-to-cart__size" type="radio" id="size-s" name="size" value="s" checked>
-          <label class="modal-add-to-cart__size-label" for="size-s">S</label>
+        <div class="modal-sizes__size-list">
+          <input class="modal-sizes__size" type="radio" id="size-s" name="size" value="s" checked>
+          <label class="modal-sizes__size-label" for="size-s">S</label>
 
-          <input class="modal-add-to-cart__size" type="radio" id="size-m" name="size" value="m">
-          <label class="modal-add-to-cart__size-label" for="size-m">M</label>
+          <input class="modal-sizes__size" type="radio" id="size-m" name="size" value="m">
+          <label class="modal-sizes__size-label" for="size-m">M</label>
 
-          <input class="modal-add-to-cart__size" type="radio" id="size-l" name="size" value="l">
-          <label class="modal-add-to-cart__size-label" for="size-l">L</label>
+          <input class="modal-sizes__size" type="radio" id="size-l" name="size" value="l">
+          <label class="modal-sizes__size-label" for="size-l">L</label>
         </div>
 
-        <button class="btn  modal-add-to-cart__btn" type="submit">Добавить</button>
+        <button class="btn  modal-sizes__btn" type="submit">Добавить</button>
 
       </form>
     </div>
