@@ -2,7 +2,7 @@
 
 https://artyomresh.github.io/mishka/
 
-[Артём Реш](https://up.htmlacademy.ru/adaptive/8/user/236435).
+[Артём Реш](https://htmlacademy.ru/profile/resh)
 
 * BEM;
 * LESS;
